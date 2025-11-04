@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Анкета програміста 💻</title>
+    <link rel="stylesheet" href="StyleSheet.css">
+</head>
+<body>
+
+    <div class="page-container">
+
+        <div class="photo-container left-photo">
+            <img src="PHOTO/bf70eafad57dd9d6a68719bde8464842.jpg" alt="Програміст зліва">
+        </div>
+
+        <div class="form-container">
+            <h2>Анкета майбутнього програміста 😎</h2>
+
+            <form id="progForm" onsubmit="return checkForm()">
+
+                <label>
+                    Ім'я (щоб знати, хто цей геній):
+                    <input type="text" id="name">
+                </label>
+
+                <label>
+                    Прізвище:
+                    <input type="text" id="surname">
+                </label>
+
+                <label>
+                    Вік (у роках, не в годинах дебагу):
+                    <input type="number" id="age" min="10" max="100">
+                </label>
+
+                <label>
+                    Email (для важливих листів від HR 😉):
+                    <input type="email" id="email">
+                </label>
+
+                <label>
+                    Мова програмування, яку ви обожнюєте:
+                    <select id="language">
+                        <option value="">-- Оберіть мову --</option>
+                        <option value="C++">C++</option>
+                        <option value="Python">Python 🐍</option>
+                        <option value="JavaScript">JavaScript ⚡</option>
+                        <option value="C#">C#</option>
+                        <option value="Java">Java ☕</option>
+                    </select>
+                </label>
+
+                <label>На чому ви кодите?</label>
+                <label><input type="radio" name="os" value="Windows"> Windows 🪟</label>
+                <label><input type="radio" name="os" value="Linux"> Linux 🐧</label>
+                <label><input type="radio" name="os" value="macOS"> macOS 🍎</label>
+
+                <label>Ваш рівень досвіду:</label>
+                <label><input type="radio" name="level" value="Початківець"> Початківець</label>
+                <label><input type="radio" name="level" value="Середній"> Середній</label>
+                <label><input type="radio" name="level" value="Досвідчений"> Досвідчений (живете у терміналі?)</label>
+
+                <label>Що саме вас заводить у програмуванні?</label>
+                <label><input type="checkbox" name="like" value="Веб-розробка"> Веб-розробка 🌐</label>
+                <label><input type="checkbox" name="like" value="Ігри"> Ігри 🎮</label>
+                <label><input type="checkbox" name="like" value="Штучний інтелект"> Штучний інтелект 🤖</label>
+                <label><input type="checkbox" name="like" value="Бази даних"> Бази даних 🧱</label>
+                <label><input type="checkbox" name="like" value="Мобільні додатки"> Мобільні додатки 📱</label>
+
+                <label>
+                    Скільки годин на день ви проводите за кодом?
+                    <input type="number" id="hours" min="0" max="24">
+                </label>
+
+                <label>
+                    Ваш улюблений редактор коду:
+                    <select id="editor">
+                        <option value="">-- Оберіть редактор --</option>
+                        <option value="VS Code">VS Code 💙</option>
+                        <option value="Sublime Text">Sublime Text</option>
+                        <option value="IntelliJ IDEA">IntelliJ IDEA 🧠</option>
+                        <option value="Visual Studio">Visual Studio</option>
+                    </select>
+                </label>
+
+                <label>
+                    Розкажіть коротко про себе (або просто напишіть “я не сплю, я дебажу”):
+                    <textarea id="about" rows="3"></textarea>
+                </label>
+
+                <button type="submit">Надіслати анкету 🚀</button>
+                <p id="errorMsg" class="error"></p>
+            </form>
+        </div>
+
+        <div class="photo-container right-photo">
+            <img src="PHOTO/bf70eafad57dd9d6a68719bde8464842.jpg" alt="Програміст справа">
+        </div>
+    </div>
+
+    <script src="JavaScript.js"></script>
+</body>
+</html>
